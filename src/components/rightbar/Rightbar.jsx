@@ -30,15 +30,15 @@ function Rightbar({profile}) {
         <div className="rightbarInfo">
           <div className="rightbarInfoItem">
             <span className="rightbarInfokey">City:</span>
-            <span className="rightbarInfoValue">New York</span>
+            <span className="rightbarInfoValue">{profile.city}</span>
           </div>
           <div className="rightbarInfoItem">
             <span className="rightbarInfokey">From:</span>
-            <span className="rightbarInfoValue">Madrid</span>
+            <span className="rightbarInfoValue">{profile.from}</span>
           </div>
           <div className="rightbarInfoItem">
             <span className="rightbarInfokey">Relationship:</span>
-            <span className="rightbarInfoValue">single</span>
+            <span className="rightbarInfoValue">{ profile.relationStatus===0 ? "Single" : "Married" }</span>
           </div>
         </div>
 
